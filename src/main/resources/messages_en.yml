@@ -1,0 +1,85 @@
+#
+# ══════════════════════════════════════
+# the plugin was written by madfout
+# telegram channel: t.me/javamadfout
+# thanks for using the plugin!
+# ══════════════════════════════════════
+#
+
+
+
+
+
+# locale: en (in config.yml)
+messages:
+
+  # plugin prefix (used in system messages)
+  prefix: "&8[&#8B88FFMdfTrimEnchants&8]"
+
+  no-permission: "&8[&#8B88FFMdfTrimEnchants&8] &cYou do not have permission to run this command."
+
+  reload-success: "&8[&#8B88FFMdfTrimEnchants&8] &aPlugin configuration reloaded successfully."
+
+  unknown-command: "&8[&#8B88FFMdfTrimEnchants&8] &cUnknown command. Use &f/mte help &cfor usage."
+
+  player-only: "&8[&#8B88FFMdfTrimEnchants&8] &cThis command can only be used by players."
+
+  player-not-found: "&8[&#8B88FFMdfTrimEnchants&8] &cPlayer &f{player} &cnot found."
+
+  reload-fail: "&8[&#8B88FFMdfTrimEnchants&8] &cReload error: &f{error}"
+
+  give-usage: "&8[&#8B88FFMdfTrimEnchants&8] &cUsage: &f/mte give <player> <trim> [amount]"
+
+  trim-not-found: "&8[&#8B88FFMdfTrimEnchants&8] &cTrim &f{trim} &cnot found, disabled, or has no template."
+
+  invalid-amount: "&8[&#8B88FFMdfTrimEnchants&8] &cInvalid amount: &f{amount}"
+
+  # placeholders: {player} {amount} {name}
+  give-success: "&8[&#8B88FFMdfTrimEnchants&8] &aGave &f{amount}x {name} &ato {player}&a."
+
+  # placeholders: {amount} {name}
+  give-received: "&8[&#8B88FFMdfTrimEnchants&8] &aYou received &f{amount}x {name}&a."
+
+  help:
+    - ""
+    - "&#8B88FF═══ &fMdfTrimEnchants &7v${project.version} &fHelp &#8B88FF═══"
+    - "&#8B88FF/mte reload &7— &fReload config"
+    - "&#8B88FF/mte help &7— &fShow this message"
+    - "&#8B88FF/mte status &8<&7player&8> &7— &fActive trim effects"
+    - "&#8B88FF/mte list &7— &fList all trims"
+    - "&#8B88FF/mte give &8<&7player&8> &8<&7trim&8> &8[&7amount&8] &7— &fGive a trim template"
+    - ""
+    - "&7Permissions:"
+    - "&#8B88FFmte.reload &7— &fReload"
+    - "&#8B88FFmte.help &7— &fHelp"
+    - "&#8B88FFmte.status &7— &fYour armor status"
+    - "&#8B88FFmte.status.others &7— &fOther players armor status"
+    - "&#8B88FFmte.list &7— &fList trims"
+    - "&#8B88FFmte.give &7— &fGive trim templates"
+    - "&#8B88FFmte.admin &7— &fAll permissions"
+    - "&#8B88FF═══ &fMdfTrimEnchants &7v${project.version} &fBy madfout &#8B88FF═══"
+    - ""
+
+  status-header:
+    - ""
+    - "&#8B88FF═══ &fArmor trims: &f{player} &#8B88FF═══"
+
+  status-no-armor: "&7No armor with active trims equipped."
+
+  # placeholders: {trim} {name} {percent} {pieces}
+  status-trim-line: "  &#8B88FF{name} &8(&7{trim}&8) &7→ &#8B88FF{percent}% &8(&7{pieces}/4 pieces&8)"
+
+  # placeholders: {attribute} {operation} {value}
+  status-effect-line: "    &8▸ &7{attribute}: &f{operation} {value}"
+
+  status-footer: "&#8B88FF═══════════════════&#8B88FF"
+
+  list-header:
+    - ""
+    - "&#8B88FF═══ &fRegistered trims &#8B88FF═══"
+
+  # placeholders: {trim} {name}
+  list-trim-enabled: "  &a✔ &f{trim} &8— &7{name}"
+  list-trim-disabled: "  &c✘ &f{trim} &8— &7{name} &8(disabled)"
+
+  list-footer: "&#8B88FF═══════════════════&#8B88FF"

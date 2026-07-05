@@ -1,0 +1,85 @@
+#
+# ══════════════════════════════════════
+# плагин был написан madfout
+# телеграм канал: t.me/javamadfout
+# спасибо за использование плагина!
+# ══════════════════════════════════════
+#
+
+
+
+
+
+# locale: ru (в config.yml)
+messages:
+
+  # префикс плагина (используется в системных сообщениях)
+  prefix: "&8[&#8B88FFMdfTrimEnchants&8]"
+
+  no-permission: "&8[&#8B88FFMdfTrimEnchants&8] &cУ вас недостаточно прав для выполнения этой команды."
+
+  reload-success: "&8[&#8B88FFMdfTrimEnchants&8] &aКонфигурация плагина успешно перезагружена."
+
+  unknown-command: "&8[&#8B88FFMdfTrimEnchants&8] &cНеизвестная команда. Используйте &f/mte help &cдля справки."
+
+  player-only: "&8[&#8B88FFMdfTrimEnchants&8] &cЭта команда доступна только игрокам."
+
+  player-not-found: "&8[&#8B88FFMdfTrimEnchants&8] &cИгрок &f{player} &cне найден."
+
+  reload-fail: "&8[&#8B88FFMdfTrimEnchants&8] &cОшибка при перезагрузке: &f{error}"
+
+  give-usage: "&8[&#8B88FFMdfTrimEnchants&8] &cИспользование: &f/mte give <игрок> <шаблон> [количество]"
+
+  trim-not-found: "&8[&#8B88FFMdfTrimEnchants&8] &cШаблон &f{trim} &cне найден, отключён или для него нет предмета-шаблона."
+
+  invalid-amount: "&8[&#8B88FFMdfTrimEnchants&8] &cНеверное количество: &f{amount}"
+
+  # плейсхолдеры: {player} {amount} {name}
+  give-success: "&8[&#8B88FFMdfTrimEnchants&8] &aВыдано &f{amount}x {name} &aигроку {player}&a."
+
+  # плейсхолдеры: {amount} {name}
+  give-received: "&8[&#8B88FFMdfTrimEnchants&8] &aВы получили &f{amount}x {name}&a."
+
+  help:
+    - ""
+    - "&#8B88FF═══ &fMdfTrimEnchants &7v${project.version} &fСправка &#8B88FF═══"
+    - "&#8B88FF/mte reload &7— &fПерезагрузить конфиг"
+    - "&#8B88FF/mte help &7— &fПоказать это сообщение"
+    - "&#8B88FF/mte status &8<&7игрок&8> &7— &fАктивные эффекты брони"
+    - "&#8B88FF/mte list &7— &fСписок всех шаблонов"
+    - "&#8B88FF/mte give &8<&7игрок&8> &8<&7шаблон&8> &8[&7количество&8] &7— &fВыдать шаблон"
+    - ""
+    - "&7Права:"
+    - "&#8B88FFmte.reload &7— &fПерезагрузка"
+    - "&#8B88FFmte.help &7— &fСправка"
+    - "&#8B88FFmte.status &7— &fСтатус своей брони"
+    - "&#8B88FFmte.status.others &7— &fСтатус брони других игроков"
+    - "&#8B88FFmte.list &7— &fСписок шаблонов"
+    - "&#8B88FFmte.give &7— &fВыдача шаблонов"
+    - "&#8B88FFmte.admin &7— &fВсе права"
+    - "&#8B88FF═══ &fMdfTrimEnchants &7v${project.version} &fBy madfout &#8B88FF═══"
+    - ""
+
+  status-header:
+    - ""
+    - "&#8B88FF═══ &fШаблоны брони: &f{player} &#8B88FF═══"
+
+  status-no-armor: "&7Нет надетой брони с активными шаблонами."
+
+  # плейсхолдеры: {trim} {name} {percent} {pieces}
+  status-trim-line: "  &#8B88FF{name} &8(&7{trim}&8) &7→ &#8B88FF{percent}% &8(&7{pieces}/4 части&8)"
+
+  # плейсхолдеры: {attribute} {operation} {value}
+  status-effect-line: "    &8▸ &7{attribute}: &f{operation} {value}"
+
+  status-footer: "&#8B88FF═══════════════════&#8B88FF"
+
+  list-header:
+    - ""
+    - "&#8B88FF═══ &fЗарегистрированные шаблоны &#8B88FF═══"
+
+  # плейсхолдеры: {trim} {name}
+  list-trim-enabled: "  &a✔ &f{trim} &8— &7{name}"
+  list-trim-disabled: "  &c✘ &f{trim} &8— &7{name} &8(выключен)"
+
+  list-footer: "&#8B88FF═══════════════════&#8B88FF"
