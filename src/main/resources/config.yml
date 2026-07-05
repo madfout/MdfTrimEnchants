@@ -11,7 +11,7 @@
 
 
 # localization: en - english, ru - russian
-locale: ru
+locale: en
 
 # player attribute update interval (in ticks, 20 ticks = 1 second)
 attribute-update-interval: 40
