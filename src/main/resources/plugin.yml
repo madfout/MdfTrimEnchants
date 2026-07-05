@@ -1,0 +1,41 @@
+name: MdfTrimEnchants
+version: '${project.version}'
+main: spigot.madfout.mdftrimenchants.MdfTrimEnchants
+api-version: '1.20'
+authors: [madfout]
+
+commands:
+  mte:
+    description: Главная командаs
+    usage: /mte <reload|help|status|list|give>
+    aliases: [ mdftrimenchants ]
+
+permissions:
+  mte.reload:
+    description: Перезагрузка конфига плагина
+    default: op
+  mte.help:
+    description: Просмотр списка команд
+    default: true
+  mte.status:
+    description: Просмотр активных эффектов своей брони
+    default: op
+  mte.status.others:
+    description: Просмотр активных эффектов брони других игроков
+    default: op
+  mte.list:
+    description: Список всех зарегистрированных шаблонов
+    default: op
+  mte.give:
+    description: Выдача шаблонов другим игрокам
+    default: op
+  mte.admin:
+    description: Полный доступ ко всем командам
+    default: op
+    children:
+      mte.reload: true
+      mte.help: true
+      mte.status: true
+      mte.status.others: true
+      mte.list: true
+      mte.give: true
