@@ -1,0 +1,27 @@
+package spigot.madfout.mdftrimenchants.model;
+
+import org.bukkit.Particle;
+
+public class MdfParticleConfig {
+
+    private final boolean enabled;
+    private final Particle particle;
+    private final int count;
+    private final double radius;
+    private final double speed;
+
+    public MdfParticleConfig(boolean enabled, Particle particle, int count, double radius, double speed) {
+        this.enabled = enabled;
+        this.particle = particle;
+        this.count = count;
+        this.radius = radius;
+        this.speed = speed;
+    }
+
+    public boolean isEnabled()   { return enabled; }
+    public Particle getParticle() { return particle; }
+    public int getCount()        { return count; }
+    public double getRadius()    { return radius; }
+    public double getSpeed()     { return speed; }
+
+}
